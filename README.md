@@ -5,7 +5,8 @@
 [![Status](https://img.shields.io/badge/Status-Evaluation%20Ready%20%E2%9C%93-brightgreen?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)]()
 
-> **GitHub Repository:** `https://github.com/shanmukha-del/Physics-Informed-Drone-Digital-Twin`  
+> **Live Deployment URL:** [https://physics-informed-drone-digital-twin.vercel.app/](https://physics-informed-drone-digital-twin.vercel.app/)  
+> **GitHub Repository:** [https://github.com/shanmukha-del/Physics-Informed-Drone-Digital-Twin](https://github.com/shanmukha-del/Physics-Informed-Drone-Digital-Twin)  
 
 ---
 
