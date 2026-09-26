@@ -842,7 +842,7 @@ export default function App() {
                 {voiceInfo.isMuted ? <VolumeX size={15} /> : <Volume2 size={15} />}
                 <span>{voiceInfo.isMuted ? 'VOICE MUTED' : 'VOICE CO-PILOT'}</span>
               </button>
-              <span className="voice-profile-tag">Indian Female · 0-Lag Local</span>
+              <span className="voice-profile-tag">{voiceInfo.voiceName || 'Indian Female · 0-Lag Local'}</span>
             </div>
 
             <div className="voice-live-marquee">
@@ -865,8 +865,11 @@ export default function App() {
 
             <button
               className="voice-test-btn"
-              onClick={() => voiceAssistant.speak('AI Voice Co-Pilot online. Ready for physics-informed flight operations.', { priority: true })}
-              title="Test Indian Female Voice"
+              onClick={() => {
+                if (voiceInfo.isMuted) voiceAssistant.setMuted(false);
+                voiceAssistant.speak('AI Voice Co-Pilot online. Ready for physics-informed flight operations.', { priority: true });
+              }}
+              title="Test Voice Announcement"
             >
               <Volume2 size={13} /> TEST VOICE
             </button>
